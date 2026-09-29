@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chanchal Cloth Store | Sarees, Suiting &amp; Kids Wear | Main Bazaar</title>
+    <meta name="description"
+        content="Chanchal Cloth Store: sarees, suiting-shirting, dress material and kids wear at honest prices. Call or WhatsApp Gaurav to check stock.">
+    <meta name="theme-color" content="#8C2F2B">
+    <meta property="og:title" content="Chanchal Cloth Store">
+    <meta property="og:description"
+        content="Sarees, suiting, dress material and kids wear. Honest prices, fabric you can touch.">
+    <meta property="og:type" content="website">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%238C2F2B'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23F6F0E4' font-family='serif'%3EC%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F6F0E4;
+            --ink: #23201C;
+            --brand: #8C2F2B;
+            --gold: #C8912B;
+            --line: #D9CFBC;
+            --card: #FBF7EE;
+            --display: 'Fraunces', Georgia, serif;
+            --body: 'Manrope', system-ui, sans-serif
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 76px
+        }
+
+        body {
+            font-family: var(--body);
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+            font-size: 16px
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        a {
+            color: inherit
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--display);
+            line-height: 1.15;
+            font-weight: 700
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            margin-bottom: 12px
+        }
+
+        .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        section {
+            padding: 90px 0
+        }
+
+        .eyebrow {
+            font-size: .78rem;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--brand);
+            font-weight: 700;
+            margin-bottom: 10px
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 22px;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: .95rem;
+            border: 2px solid var(--brand);
+            transition: transform .15s
+        }
+
+        .btn:hover {
+            transform: translateY(-2px)
+        }
+
+        .btn-wa {
+            background: var(--brand);
+            color: var(--bg)
+        }
+
+        .btn-call {
+            background: transparent;
+            color: var(--brand)
+        }
+
+        .btn-sm {
+            padding: 8px 14px;
+            font-size: .85rem
+        }
+
+        .tape {
+            display: block;
+            width: 100%;
+            height: 28px;
+            color: var(--gold)
+        }
+
+        /* header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: var(--bg);
+            border-bottom: 1px solid var(--line)
+        }
+
+        .hbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            height: 68px
+        }
+
+        .logo {
+            font-family: var(--display);
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-decoration: none;
+            color: var(--brand)
+        }
+
+        .logo small {
+            display: block;
+            font-family: var(--body);
+            font-size: .62rem;
+            letter-spacing: .16em;
+            color: var(--ink);
+            font-weight: 500
+        }
+
+        nav {
+            display: flex;
+            gap: 22px
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: .92rem
+        }
+
+        nav a:hover {
+            color: var(--brand)
+        }
+
+        .hcta {
+            display: flex;
+            gap: 8px
+        }
+
+        .burger {
+            display: none;
+            background: none;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            width: 42px;
+            height: 42px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--ink)
+        }
+
+        /* hero */
+        .hero {
+            padding: 60px 0 70px
+        }
+
+        .hgrid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 48px;
+            align-items: center
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5.4vw, 4rem);
+            margin-bottom: 18px
+        }
+
+        .hero h1 em {
+            color: var(--brand);
+            font-style: italic
+        }
+
+        .proof {
+            font-size: 1.05rem;
+            margin-bottom: 24px;
+            max-width: 520px
+        }
+
+        .hbtns {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 16px
+        }
+
+        .micro {
+            font-size: .85rem;
+            color: #5b5348
+        }
+
+        .hvis {
+            position: relative
+        }
+
+        .hvis .ph {
+            aspect-ratio: 4/5;
+            border-radius: 180px 180px 16px 16px;
+            overflow: hidden;
+            background: var(--line);
+            border: 2px dashed var(--gold);
+            padding: 10px
+        }
+
+        .hvis .ph img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 170px 170px 8px 8px
+        }
+
+        .stamp {
+            position: absolute;
+            left: -18px;
+            bottom: 28px;
+            background: var(--gold);
+            color: var(--ink);
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-family: var(--display);
+            font-weight: 700;
+            transform: rotate(-4deg);
+            font-size: .95rem
+        }
+
+        /* trust */
+        .trust {
+            background: var(--ink);
+            color: var(--bg);
+            padding: 44px 0
+        }
+
+        .tgrid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px
+        }
+
+        .tgrid b {
+            display: block;
+            font-family: var(--display);
+            font-size: 2.2rem;
+            color: var(--gold)
+        }
+
+        .tgrid span {
+            font-size: .9rem
+        }
+
+        /* services */
+        .sgrid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 18px;
+            margin-top: 34px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 24px;
+            grid-column: span 2;
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .card.big {
+            grid-column: span 3
+        }
+
+        .card svg.ic {
+            width: 38px;
+            height: 38px;
+            color: var(--brand)
+        }
+
+        .card h3 {
+            font-size: 1.3rem
+        }
+
+        .card p {
+            font-size: .93rem;
+            flex: 1
+        }
+
+        .price {
+            font-weight: 700;
+            color: var(--brand)
+        }
+
+        .card .btn {
+            align-self: flex-start;
+            margin-top: 6px
+        }
+
+        /* about */
+        .about {
+            background: var(--card);
+            border-block: 1px solid var(--line)
+        }
+
+        .agrid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 56px
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--brand);
+            color: var(--bg);
+            display: grid;
+            place-items: center;
+            font-family: var(--display);
+            font-size: 2.6rem;
+            margin-bottom: 16px
+        }
+
+        .about p {
+            margin-bottom: 14px
+        }
+
+        .diff {
+            list-style: none;
+            margin-top: 8px
+        }
+
+        .diff li {
+            padding: 10px 0 10px 30px;
+            border-bottom: 1px dashed var(--line);
+            position: relative
+        }
+
+        .diff li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 17px;
+            width: 16px;
+            height: 2px;
+            background: var(--gold);
+            box-shadow: 0 0 0 0 var(--gold)
+        }
+
+        /* gallery */
+        .ggrid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 170px;
+            gap: 12px;
+            margin-top: 30px
+        }
+
+        .ggrid figure {
+            background: var(--line);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative
+        }
+
+        .ggrid figure:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2
+        }
+
+        .ggrid figure:nth-child(4) {
+            grid-row: span 2
+        }
+
+        .ggrid figure:nth-child(6) {
+            grid-column: span 2
+        }
+
+        .ggrid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .ggrid figcaption {
+            position: absolute;
+            left: 8px;
+            bottom: 8px;
+            background: var(--bg);
+            font-size: .75rem;
+            padding: 3px 9px;
+            border-radius: 99px
+        }
+
+        /* testimonials */
+        .tgr {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 18px;
+            margin-top: 30px
+        }
+
+        .rev {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 24px
+        }
+
+        .rev:nth-child(2) {
+            margin-top: 28px
+        }
+
+        .stars {
+            display: flex;
+            gap: 3px;
+            color: var(--gold);
+            margin-bottom: 10px
+        }
+
+        .stars svg {
+            width: 18px;
+            height: 18px
+        }
+
+        .rev p {
+            font-size: .97rem;
+            margin-bottom: 12px
+        }
+
+        .rev cite {
+            font-style: normal;
+            font-weight: 700;
+            font-size: .88rem
+        }
+
+        .rev cite span {
+            display: block;
+            font-weight: 400;
+            color: #5b5348
+        }
+
+        /* pricing */
+        .plist {
+            max-width: 760px;
+            margin-top: 26px
+        }
+
+        .plist div {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 14px 0;
+            border-bottom: 1px dashed var(--line)
+        }
+
+        .plist dt {
+            font-weight: 500
+        }
+
+        .plist dd {
+            font-weight: 700;
+            color: var(--brand);
+            white-space: nowrap
+        }
+
+        .note {
+            margin-top: 16px;
+            font-size: .88rem;
+            color: #5b5348
+        }
+
+        /* contact */
+        .cgrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+            margin-top: 30px
+        }
+
+        .map {
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            min-height: 340px
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 340px;
+            border: 0
+        }
+
+        .hours {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0 22px
+        }
+
+        .hours td {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .hours td:last-child {
+            text-align: right;
+            font-weight: 500
+        }
+
+        .cbtns {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 14px
+        }
+
+        /* footer */
+        footer {
+            background: var(--ink);
+            color: var(--bg);
+            padding: 64px 0 100px
+        }
+
+        .fgrid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr 1fr;
+            gap: 36px
+        }
+
+        footer h3 {
+            color: var(--gold);
+            font-size: 1.4rem;
+            margin-bottom: 8px
+        }
+
+        footer a {
+            text-decoration: none;
+            display: block;
+            padding: 3px 0;
+            opacity: .9
+        }
+
+        .fbig {
+            display: inline-flex;
+            font-size: 1.05rem;
+            padding: 16px 28px;
+            background: var(--gold);
+            color: var(--ink);
+            border-color: var(--gold)
+        }
+
+        .credit {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #4a443c;
+            font-size: .82rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        /* sticky bar */
+        .sbar {
+            display: none
+        }
+
+        @media(max-width:1080px) {
+            .tgrid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .tgr {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .tgr .rev:last-child {
+                grid-column: span 2
+            }
+        }
+
+        @media(max-width:820px) {
+            section {
+                padding: 64px 0
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 68px;
+                left: 0;
+                right: 0;
+                background: var(--bg);
+                flex-direction: column;
+                padding: 16px 20px;
+                border-bottom: 1px solid var(--line);
+                gap: 14px
+            }
+
+            nav.open {
+                display: flex
+            }
+
+            .burger {
+                display: block
+            }
+
+            .hcta {
+                display: none
+            }
+
+            .hgrid,
+            .agrid,
+            .cgrid,
+            .fgrid {
+                grid-template-columns: 1fr
+            }
+
+            .hvis {
+                max-width: 360px
+            }
+
+            .sgrid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .card,
+            .card.big {
+                grid-column: span 1
+            }
+
+            .ggrid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 150px
+            }
+
+            .ggrid figure:nth-child(1) {
+                grid-column: span 2
+            }
+
+            .ggrid figure:nth-child(6) {
+                grid-column: span 2
+            }
+
+            .tgr {
+                grid-template-columns: 1fr
+            }
+
+            .tgr .rev:last-child {
+                grid-column: auto
+            }
+
+            .rev:nth-child(2) {
+                margin-top: 0
+            }
+
+            .sbar {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 60;
+                background: var(--bg);
+                border-top: 1px solid var(--line);
+                gap: 8px;
+                padding: 8px;
+                padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px))
+            }
+
+            .sbar a {
+                justify-content: center
+            }
+        }
+
+        @media(max-width:520px) {
+            .sgrid {
+                grid-template-columns: 1fr
+            }
+
+            .tgrid b {
+                font-size: 1.8rem
+            }
+
+            .hero {
+                padding-top: 36px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="tp" viewBox="0 0 600 28">
+            <rect x="0" y="4" width="600" height="20" rx="3" fill="currentColor" opacity=".16" />
+            <path d="M0 4h600M0 24h600" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 4" />
+            <g stroke="currentColor" stroke-width="1.4">
+                <path
+                    d="M10 4v12M20 4v7M30 4v7M40 4v7M50 4v7M60 4v12M70 4v7M80 4v7M90 4v7M100 4v7M110 4v12M120 4v7M130 4v7M140 4v7M150 4v7M160 4v12M170 4v7M180 4v7M190 4v7M200 4v7M210 4v12M220 4v7M230 4v7M240 4v7M250 4v7M260 4v12M270 4v7M280 4v7M290 4v7M300 4v7M310 4v12M320 4v7M330 4v7M340 4v7M350 4v7M360 4v12M370 4v7M380 4v7M390 4v7M400 4v7M410 4v12M420 4v7M430 4v7M440 4v7M450 4v7M460 4v12M470 4v7M480 4v7M490 4v7M500 4v7M510 4v12M520 4v7M530 4v7M540 4v7M550 4v7M560 4v12M570 4v7M580 4v7M590 4v7" />
+            </g>
+        </symbol>
+        <symbol id="star" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z" />
+        </symbol>
+        <symbol id="wa" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z" />
+        </symbol>
+        <symbol id="ph" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11 11 0 003.5.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11 11 0 00.6 3.5 1 1 0 01-.25 1z" />
+        </symbol>
+    </svg>
+
+    <header>
+        <div class="wrap hbar">
+            <a href="#top" class="logo">Chanchal Cloth Store<small>KAPDA &bull; SINCE 1994</small></a>
+            <nav id="nav">
+                <a href="#services">Collection</a><a href="#about">About</a><a href="#gallery">Gallery</a><a
+                    href="#pricing">Rates</a><a href="#contact">Visit</a>
+            </nav>
+            <div class="hcta">
+                <a class="btn btn-call btn-sm" href="tel:+917028529411"><svg width="16" height="16">
+                        <use href="#ph" />
+                    </svg>Call</a>
+                <a class="btn btn-wa btn-sm"
+                    href="https://wa.me/917028529411?text=Namaste%20Chanchal%20Cloth%20Store%2C%20I%20want%20to%20know%20about%20your%20collection."
+                    target="_blank" rel="noopener"><svg width="16" height="16">
+                        <use href="#wa" />
+                    </svg>WhatsApp</a>
+            </div>
+            <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="wrap hgrid">
+                <div>
+                    <p class="eyebrow">Family cloth shop, Main Bazaar</p>
+                    <h1>Sarees, suiting and school-to-wedding fabric, <em>cut fair and priced honest</em>!</h1>
+                    <p class="proof">Three generations of families in our lane buy their festival cloth from us. Come
+                        touch the fabric before you pay.</p>
+                    <div class="hbtns">
+                        <a class="btn btn-wa"
+                            href="https://wa.me/917028529411?text=Namaste%2C%20I%20saw%20your%20website.%20Please%20share%20today%27s%20new%20stock%20and%20rates."
+                            target="_blank" rel="noopener"><svg width="18" height="18">
+                                <use href="#wa" />
+                            </svg>Message on WhatsApp</a>
+                        <a class="btn btn-call" href="tel:+917028529411"><svg width="18" height="18">
+                                <use href="#ph" />
+                            </svg>Call 70285 29411</a>
+                    </div>
+                    <p class="micro">Open 7 days &bull; No obligation to buy &bull; Free measuring and cutting</p>
+                </div>
+                <div class="hvis">
+                    <div class="ph"><img
+                            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&auto=format&fit=crop"
+                            alt="Colourful sarees folded on a shop shelf" onerror="this.style.display='none'"></div>
+                    <div class="stamp">Sarees from Rs 450</div>
+                </div>
+            </div>
+        </section>
+
+        <svg class="tape" aria-hidden="true" preserveAspectRatio="none">
+            <use href="#tp" />
+        </svg>
+
+        <div class="trust">
+            <div class="wrap tgrid">
+                <div><b>30+</b><span>years in the same shop</span></div>
+                <div><b>2,000+</b><span>fabric designs in stock</span></div>
+                <div><b>4.7</b><span>rating from neighbours</span></div>
+                <div><b>0</b><span>charge for cutting and measuring</span></div>
+            </div>
+        </div>
+
+        <section id="services">
+            <div class="wrap">
+                <p class="eyebrow">Collection</p>
+                <h2>What is on our shelves today</h2>
+                <p>Prices below are starting rates. Tap WhatsApp on any card and we will send photos of what is in
+                    stock.</p>
+                <div class="sgrid">
+                    <article class="card big">
+                        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 8h28M8 8c0 14 8 24 12 26M32 8c0 10-6 20-12 26" />
+                            <path d="M12 8v6M20 8v10M28 8v6" stroke-dasharray="3 3" />
+                        </svg>
+                        <h3>Cotton &amp; Silk Sarees</h3>
+                        <p>Daily-wear cotton, Banarasi-look silk, wedding borders. Blouse piece included.</p><span
+                            class="price">From Rs 450</span>
+                        <a class="btn btn-wa btn-sm"
+                            href="https://wa.me/917028529411?text=Hello%2C%20please%20send%20photos%20of%20sarees%20in%20stock."
+                            target="_blank" rel="noopener">Ask about sarees</a>
+                    </article>
+                    <article class="card big">
+                        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 6l6 5 6-5 8 6-5 6v16H11V18l-5-6z" />
+                            <path d="M20 11v23" stroke-dasharray="3 3" />
+                        </svg>
+                        <h3>Suiting &amp; Shirting</h3>
+                        <p>Cotton, linen and poly-viscose lengths for office wear and functions. We fold, you carry to
+                            your tailor.</p><span class="price">From Rs 180 per metre</span>
+                        <a class="btn btn-wa btn-sm"
+                            href="https://wa.me/917028529411?text=Hello%2C%20I%20need%20suiting%20or%20shirting%20fabric.%20Please%20share%20options."
+                            target="_blank" rel="noopener">Ask about suiting</a>
+                    </article>
+                    <article class="card">
+                        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 6h16l4 10-6 2v16H14V18l-6-2z" />
+                        </svg>
+                        <h3>Dress Material</h3>
+                        <p>Unstitched salwar sets in cotton, rayon and georgette.</p><span class="price">From Rs 350 per
+                            set</span>
+                        <a class="btn btn-wa btn-sm"
+                            href="https://wa.me/917028529411?text=Hello%2C%20please%20show%20dress%20material%20sets."
+                            target="_blank" rel="noopener">Ask on WhatsApp</a>
+                    </article>
+                    <article class="card">
+                        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="20" cy="10" r="4" />
+                            <path d="M12 34V20l8-4 8 4v14z" />
+                        </svg>
+                        <h3>Kids Wear</h3>
+                        <p>Frocks, kurta sets and school-function outfits, ages 1 to 12.</p><span class="price">From Rs
+                            250</span>
+                        <a class="btn btn-wa btn-sm"
+                            href="https://wa.me/917028529411?text=Hello%2C%20I%20want%20kids%20wear.%20Age%20of%20child%3A%20"
+                            target="_blank" rel="noopener">Ask on WhatsApp</a>
+                    </article>
+                    <article class="card">
+                        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="10" width="28" height="20" rx="3" />
+                            <path d="M6 20h28M20 10v20" stroke-dasharray="3 3" />
+                        </svg>
+                        <h3>Bedsheets &amp; Curtains</h3>
+                        <p>Double bedsheets with pillow covers, door and window curtains by the piece.</p><span
+                            class="price">From Rs 299</span>
+                        <a class="btn btn-wa btn-sm"
+                            href="https://wa.me/917028529411?text=Hello%2C%20please%20share%20bedsheet%20and%20curtain%20options."
+                            target="_blank" rel="noopener">Ask on WhatsApp</a>
+                    </article>
+                    <article class="card big">
+                        <svg class="ic" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 32L32 8M8 8l24 24" stroke-dasharray="4 3" />
+                            <circle cx="20" cy="20" r="14" />
+                        </svg>
+                        <h3>Wedding &amp; Bulk Orders</h3>
+                        <p>Fabric for the whole family, matching sets and uniforms. Bring your list, we will plan
+                            quantity and give a package rate.</p><span class="price">Special rate on 5+ pieces</span>
+                        <a class="btn btn-wa btn-sm"
+                            href="https://wa.me/917028529411?text=Hello%2C%20I%20have%20a%20wedding%20or%20bulk%20order.%20Please%20call%20me%20back."
+                            target="_blank" rel="noopener">Plan my order</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <svg class="tape" aria-hidden="true" preserveAspectRatio="none">
+            <use href="#tp" />
+        </svg>
+
+        <section id="about" class="about">
+            <div class="wrap agrid">
+                <div>
+                    <div class="avatar">G</div>
+                    <h2>Gaurav</h2>
+                    <p class="eyebrow">Owner, second generation</p>
+                </div>
+                <div>
+                    <p>My grandfather Chanchal Lal started this shop in 1994 with two racks and one wooden measuring
+                        stick. I still use that stick when a customer wants a length checked twice.</p>
+                    <p>I was ten when I first folded a saree behind this counter. My father used to say, "cloth is
+                        trust, the customer cannot test it at home." That line is written on the back wall today.</p>
+                    <p>We do not push. Sit, drink chai, touch the cloth, take your time.</p>
+                    <ul class="diff">
+                        <li>Fabric shown in daylight at the door, not under shop lights</li>
+                        <li>Measured with a metal tape and cut in front of you</li>
+                        <li>Rates written on the tag, no different price for different faces</li>
+                        <li>Colour or quality problem? Exchange within 7 days with the bill</li>
+                        <li>Free folding, pressing and wrapping for gifts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="wrap">
+                <p class="eyebrow">Inside the shop</p>
+                <h2>A look at the shelves</h2>
+                <div class="ggrid">
+                    <figure><img loading="lazy"
+                            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&auto=format&fit=crop"
+                            alt="Sarees on display" onerror="this.remove()">
+                        <figcaption>Saree wall</figcaption>
+                    </figure>
+                    <figure><img loading="lazy"
+                            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&auto=format&fit=crop"
+                            alt="Rolls of fabric" onerror="this.remove()">
+                        <figcaption>Fabric rolls</figcaption>
+                    </figure>
+                    <figure><img loading="lazy"
+                            src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=800&auto=format&fit=crop"
+                            alt="Cotton textiles" onerror="this.remove()">
+                        <figcaption>Cotton</figcaption>
+                    </figure>
+                    <figure><img loading="lazy"
+                            src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=800&auto=format&fit=crop"
+                            alt="Traditional Indian textile" onerror="this.remove()">
+                        <figcaption>Festival wear</figcaption>
+                    </figure>
+                    <figure><img loading="lazy"
+                            src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&auto=format&fit=crop"
+                            alt="Colourful dress material" onerror="this.remove()">
+                        <figcaption>Dress material</figcaption>
+                    </figure>
+                    <figure><img loading="lazy"
+                            src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&auto=format&fit=crop"
+                            alt="Suiting fabric" onerror="this.remove()">
+                        <figcaption>Suiting</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <svg class="tape" aria-hidden="true" preserveAspectRatio="none">
+            <use href="#tp" />
+        </svg>
+
+        <section id="reviews">
+            <div class="wrap">
+                <p class="eyebrow">Neighbours say</p>
+                <h2>What our customers told us</h2>
+                <div class="tgr">
+                    <div class="rev">
+                        <div class="stars"><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg></div>
+                        <p>Bought six sarees for my daughter's shaadi. Gaurav bhai gave a proper package rate and even
+                            kept the blouse pieces matching. Nobody in the family complained about colour.</p>Sunita
+                        Devi<span>Ganesh Chowk</span>
+                    </div>
+                    <div class="rev">
+                        <div class="stars"><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg></div>
+                        <p>Suiting length was 20 rupees cheaper per metre than the big showroom and same quality. My
+                            tailor confirmed it.</p>Rakesh Patil<span>Station Road</span>
+                    </div>
+                    <div class="rev">
+                        <div class="stars"><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg><svg>
+                                <use href="#star" />
+                            </svg></div>
+                        <p>Colour ran a little after first wash. Took it back with the bill and got an exchange, no
+                            arguing.</p>Meena Joshi<span>Old Market</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" style="background:var(--card);border-block:1px solid var(--line)">
+            <div class="wrap">
+                <p class="eyebrow">Rates</p>
+                <h2>Plain rate list</h2>
+                <dl class="plist">
+                    <div>
+                        <dt>Cotton saree</dt>
+                        <dd>Rs 450 to 1,200</dd>
+                    </div>
+                    <div>
+                        <dt>Silk-blend saree</dt>
+                        <dd>Rs 1,500 to 4,500</dd>
+                    </div>
+                    <div>
+                        <dt>Suiting, per metre</dt>
+                        <dd>Rs 180 to 650</dd>
+                    </div>
+                    <div>
+                        <dt>Shirting, per metre</dt>
+                        <dd>Rs 120 to 400</dd>
+                    </div>
+                    <div>
+                        <dt>Dress material set</dt>
+                        <dd>Rs 350 to 1,400</dd>
+                    </div>
+                    <div>
+                        <dt>Kids outfit</dt>
+                        <dd>Rs 250 to 900</dd>
+                    </div>
+                    <div>
+                        <dt>Double bedsheet set</dt>
+                        <dd>Rs 299 to 899</dd>
+                    </div>
+                    <div>
+                        <dt>Measuring and cutting</dt>
+                        <dd>Free</dd>
+                    </div>
+                </dl>
+                <p class="note">Rates change slightly with season and fabric. WhatsApp us for today's exact price.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrap">
+                <p class="eyebrow">Visit us</p>
+                <h2>Find the shop</h2>
+                <div class="cgrid">
+                    <div class="map"><iframe title="Chanchal Cloth Store location" loading="lazy"
+                            src="https://maps.google.com/maps?q=Main%20Bazaar%2C%20Near%20Ganesh%20Mandir%20Chowk%2C%20India&output=embed"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div>
+                        <p><strong>Chanchal Cloth Store</strong><br>Main Bazaar, Near Ganesh Mandir Chowk, India</p>
+                        <table class="hours">
+                            <tr>
+                                <td>Monday to Saturday</td>
+                                <td>10:00 am to 9:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>10:30 am to 8:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Festival weeks</td>
+                                <td>Open till 10:00 pm</td>
+                            </tr>
+                        </table>
+                        <p>Phone: <a href="tel:+917028529411"><strong>+91 70285 29411</strong></a></p>
+                        <div class="cbtns">
+                            <a class="btn btn-wa"
+                                href="https://wa.me/917028529411?text=Namaste%2C%20I%20want%20to%20visit%20the%20shop.%20What%20time%20is%20best%3F"
+                                target="_blank" rel="noopener"><svg width="18" height="18">
+                                    <use href="#wa" />
+                                </svg>WhatsApp</a>
+                            <a class="btn btn-call" href="tel:+917028529411"><svg width="18" height="18">
+                                    <use href="#ph" />
+                                </svg>Call now</a>
+                            <a class="btn btn-call"
+                                href="https://www.google.com/maps/search/?api=1&query=Main%20Bazaar%2C%20Near%20Ganesh%20Mandir%20Chowk%2C%20India"
+                                target="_blank" rel="noopener">Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <svg class="tape" aria-hidden="true" preserveAspectRatio="none" style="margin-bottom:36px">
+                <use href="#tp" />
+            </svg>
+            <div class="fgrid">
+                <div>
+                    <h3>Chanchal Cloth Store</h3>
+                    <p>Honest cloth, fair rates, since 1994.</p>
+                </div>
+                <div><a href="#services">Collection</a><a href="#about">About</a><a href="#gallery">Gallery</a><a
+                        href="#pricing">Rates</a><a href="#contact">Visit</a></div>
+                <div><a class="btn fbig"
+                        href="https://wa.me/917028529411?text=Namaste%20Chanchal%20Cloth%20Store%2C%20I%20want%20to%20place%20an%20enquiry."
+                        target="_blank" rel="noopener"><svg width="20" height="20">
+                            <use href="#wa" />
+                        </svg>Chat with Gaurav</a></div>
+            </div>
+            <div class="credit"><span>&copy; <span id="yr"></span> Chanchal Cloth Store. All rights
+                    reserved.</span><span>built with ❤️ by 21.coders</span></div>
+        </div>
+    </footer>
+
+    <div class="sbar">
+        <a class="btn btn-call" href="tel:+917028529411"><svg width="18" height="18">
+                <use href="#ph" />
+            </svg>Call</a>
+        <a class="btn btn-wa"
+            href="https://wa.me/917028529411?text=Namaste%20Chanchal%20Cloth%20Store%2C%20I%20want%20to%20know%20about%20your%20collection."
+            target="_blank" rel="noopener"><svg width="18" height="18">
+                <use href="#wa" />
+            </svg>WhatsApp</a>
+    </div>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+        var b = document.getElementById('burger'), n = document.getElementById('nav');
+        b.addEventListener('click', function () { n.classList.toggle('open') });
+        n.addEventListener('click', function (e) { if (e.target.tagName === 'A') n.classList.remove('open') });
+    </script>
+</body>
+
+</html>
